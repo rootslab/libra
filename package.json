@@ -1,6 +1,6 @@
 {
   "name": "libra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Libra, a module to handle Redis commands/replies queues.",
   "homepage": "https://github.com/rootslab/libra",
   "private": false,

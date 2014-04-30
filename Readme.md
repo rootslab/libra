@@ -6,7 +6,7 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _Libra_, a collection of Redis commands mix-ins.
+> _Libra_, a module to handle Redis commands/replies queues.
 
 ###Install
 
