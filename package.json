@@ -1,0 +1,35 @@
+{
+  "name": "libra",
+  "version": "0.0.1",
+  "description": "Libra, a module to handle Redis commands/replies queues.",
+  "homepage": "https://github.com/rootslab/libra",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rootslab/libra.git"
+  },
+  "keywords": [
+    "libra",
+    "redis",
+    "command"
+  ],
+  "author": {
+    "name": "Guglielmo Ferri",
+    "email": "44gatti@gmail.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "main": "index",
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "scripts": {
+    "test": "bash test/run.sh"
+  },
+  "license": "MIT",
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/rootslab/libra/issues"
+  }
+}
