@@ -1,6 +1,6 @@
 {
   "name": "libra",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Libra, a module to handle Redis commands/replies queues.",
   "homepage": "https://github.com/rootslab/libra",
   "private": false,
@@ -18,8 +18,11 @@
     "email": "44gatti@gmail.com"
   },
   "dependencies": {
+    "train" : ">=3.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "syllabus" : ">=0.15.4"
+    },
   "main": "index",
   "engines": {
     "node": ">=0.8.x"
