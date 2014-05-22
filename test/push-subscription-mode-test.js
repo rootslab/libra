@@ -53,4 +53,4 @@ assert.equal( l.cqueue.get( 3 ).isSubscription, true );
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'QUIT' );
 l.push( quit );
 assert.equal( l.cqueue.get( 4 ).cmd, 'QUIT' );
-assert.equal( l.cqueue.get( 3 ).isQuit, true );
+assert.equal( l.cqueue.get( 4 ).isQuit, true );
