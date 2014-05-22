@@ -50,26 +50,7 @@ log( '- check Libra#push(%s) in subscription mode, command should be accepted/ma
 l.push( punsub );
 assert.equal( l.cqueue.get( 3 ).isSubscription, true );
 
-// other commands should be discarded
-
-log( '- check Libra#push(%s) in subscription mode, command should be discarded.', 'PUBLISH' );
-l.push( publish );
-assert.equal( l.cqueue.get( 4 ), undefined );
-
-log( '- check Libra#push(%s) in subscription mode, command should be discarded.', 'PUBSUB CHANNELS' );
-l.push( pubsubch );
-assert.equal( l.cqueue.get( 4 ), undefined );
-
-log( '- check Libra#push(%s) in subscription mode, command should be discarded.', 'PUBSUB NUMSUB' );
-l.push( pubsubns );
-assert.equal( l.cqueue.get( 4 ), undefined );
-
-log( '- check Libra#push(%s) in subscription mode, command should be discarded.', 'PUBSUB NUMPAT' );
-l.push( pubsubnp );
-assert.equal( l.cqueue.get( 4 ), undefined );
-
-// quit should be accepted
-
-log( '- check Libra#push(%s) in subscription mode, command should be accepted.', 'QUIT' );
+log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'QUIT' );
 l.push( quit );
 assert.equal( l.cqueue.get( 4 ).cmd, 'QUIT' );
+assert.equal( l.cqueue.get( 3 ).isQuit, true );
