@@ -6,9 +6,9 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _Libra_, a module to handle bindings between commands and Redis replies.
+> _Libra_, a module to handle bindings between commands and Redis replies. It uses an automatic rollback mechanism to handle incomplete transactions.
 
-> NOTE: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
+> __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 
 ###Install
 
