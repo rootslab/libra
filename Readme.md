@@ -8,6 +8,8 @@
 
 > _Libra_, a module to handle bindings between commands and Redis replies.
 
+> NOTE: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
+
 ###Install
 
 ```bash
@@ -15,7 +17,7 @@ $ npm install libra [-g]
 // clone repo
 $ git clone git@github.com:rootslab/libra.git
 ```
-> __require__ 
+> __require__
 
 ```javascript
 var Libra = require( 'libra' );
@@ -41,7 +43,24 @@ var l = new Libra()
 ### Properties
 
 ```javascript
+// command queue
+Libra.cqueue : Train
 
+// status properties
+Libra.status : {
+    subscription : {
+        on : 0
+        , channels : 0
+        , pchannels : 0
+    }
+    , transaction : {
+        on : 0
+        , active : 0
+    }
+    , monitoring : {
+        on : 0
+    }
+}
 ```
 
 ###Methods
@@ -49,6 +68,32 @@ var l = new Libra()
 > Arguments within [ ] are optional.
 
 ```javascript
+/*
+ * Push a Syllabus command to the internal queue.
+ * It returns the number of command objects currently in the queue.
+ *
+ * NOTE: Only Syllabus commands are accepted.
+ */
+Libra#push( Object syllabus_command ) : Number
+
+/*
+ * Pop a Syllabus command from the internal queue.
+ * It pops the current head of the command queue.
+ */
+Libra#pop() : Object
+
+/*
+ * Update internal subscription status ( using a un/subscription reply ),
+ * passing the command and the number of current subscribed channels.
+ */
+Libra#update( subscription_command, channels_number ) : Number
+
+/*
+ * Flush the internal queue, reset all internal status properties,
+ * then disable rollback mechanism.
+ * It returns the current Libra instance.
+ */
+Libra#flush() : Libra
 
 ```
 ------------------------------------------------------------------------
