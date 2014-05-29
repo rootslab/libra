@@ -1,6 +1,6 @@
 {
   "name": "libra",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Libra, a module to handle bindings between commands and Redis replies.",
   "homepage": "https://github.com/rootslab/libra",
   "private": false,
@@ -19,7 +19,7 @@
     "email": "44gatti@gmail.com"
   },
   "dependencies": {
-    "train" : ">=3.2.0",
+    "train" : ">=3.3.0",
     "bolgia" : ">=2.5.1"
   },
   "devDependencies": {

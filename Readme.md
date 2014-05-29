@@ -1,6 +1,7 @@
 ###Libra
 [![build status](https://secure.travis-ci.org/rootslab/libra.png?branch=master)](http://travis-ci.org/rootslab/libra) 
 [![NPM version](https://badge.fury.io/js/libra.png)](http://badge.fury.io/js/libra)
+[![build status](https://david-dm.org/rootslab/libra.png)](https://david-dm.org/rootslab/libra)
 
 [![NPM](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
 
@@ -87,6 +88,46 @@ Libra#pop() : Object
  * passing the command and the number of current subscribed channels.
  */
 Libra#update( subscription_command, channels_number ) : Number
+
+/*
+ * Start rolling up.
+ * From now, all items evicted from the queue could be
+ * restored, executing #rollBack().
+ * Disable rollUp passing false.
+ * It returns the current Libra instance.
+ */
+Libra#rollUp( [ Boolean on ] ) : Libra
+
+/*
+ * Do rollback; previously evicted items are restored
+ * to the head of queue. Optionally, it is possible to
+ * re-enable rollUp mechanism after the rollBack, passing
+ * a true argument.
+ * It returns the current Libra instance.
+ * 
+ * NOTE: no rollBack will be done if rollUp was not already activated.
+ */
+Libra#rollBack( [ Boolean on ] ) : Libra
+
+
+/*
+ * Apply a fn to every element of the internal command queue;
+ * fn will get 3 arguments: Object element, Number index, Function done.
+ * After that every fn will have called done(), the callback will be launched
+ * with an err argument ( if any has occurred ) and a number, representing
+ * the total processed / iterated elements in the queue.
+ *
+ * If boolean "evict" was set to true, after the last fn call to done(),
+ * the queue will be flushed.
+ *
+ * NOTE: when queue size is 0, the callback will be immediately executed
+ * with arguments: ( null, 0 ).
+ *
+ * NOTE: on iteration, the size is fixed to the current queue size,
+ * then it is possible to push other elements to the tail, these
+ * added elements are not affected by iteration.
+ */
+Libra#iterate( Function fn [, Object scope [, Function cback [, Boolean evict ] ] ] ) : Libra
 
 /*
  * Flush the internal queue, reset all internal status properties,
