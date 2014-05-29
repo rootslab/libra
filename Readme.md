@@ -7,9 +7,11 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _**Libra**_, a module to handle bindings between commands and Redis replies. It uses an automatic rollback mechanism to handle incomplete transactions.
-
+> _**Libra**_, a module to handle bindings between commands and __Redis__ replies. It uses an __automatic rollback mechanism__ to handle incomplete transactions.
+ 
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
+
+> __NOTE__: If you need a full-featured __Redis 2.x__ client, built with the help of __[Libra](#)__ and __[Syllabus](https://github.com/rootslab/syllabus)__ modules, try __[♠ Spade](https://github.com/rootslab/spade)__.
 
 ###Install
 
@@ -88,6 +90,8 @@ Libra#pop() : Object
 /*
  * Update internal subscription status ( using a un/subscription reply ),
  * passing the command and the number of current subscribed channels.
+ *
+ * Examples: Libra#update( 'subscribe', 5 ) or Libra#update( 'unsubscribe', 3 )
  */
 Libra#update( subscription_command, channels_number ) : Number
 

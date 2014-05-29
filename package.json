@@ -1,6 +1,6 @@
 {
   "name": "libra",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Libra, a module to handle bindings between commands and Redis replies.",
   "homepage": "https://github.com/rootslab/libra",
   "private": false,
