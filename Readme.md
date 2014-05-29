@@ -7,7 +7,7 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _Libra_, a module to handle bindings between commands and Redis replies. It uses an automatic rollback mechanism to handle incomplete transactions.
+> _**Libra**_, a module to handle bindings between commands and Redis replies. It uses an automatic rollback mechanism to handle incomplete transactions.
 
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 
@@ -42,6 +42,8 @@ var l = new Libra()
 ```
 
 ### Properties
+
+> __WARNING__: Don't mess with these properties.
 
 ```javascript
 // command queue
@@ -91,18 +93,16 @@ Libra#update( subscription_command, channels_number ) : Number
 
 /*
  * Start rolling up.
- * From now, all items evicted from the queue could be
- * restored, executing #rollBack().
+ * From now, all items evicted from the queue could be restored, executing #rollBack().
  * Disable rollUp passing false.
  * It returns the current Libra instance.
  */
 Libra#rollUp( [ Boolean on ] ) : Libra
 
 /*
- * Do rollback; previously evicted items are restored
- * to the head of queue. Optionally, it is possible to
- * re-enable rollUp mechanism after the rollBack, passing
- * a true argument.
+ * Do rollback; previously evicted items are restored to the head of queue.
+ * Optionally, it is possible to re-enable rollUp mechanism after the rollBack,
+ * passing true.
  * It returns the current Libra instance.
  * 
  * NOTE: no rollBack will be done if rollUp was not already activated.
