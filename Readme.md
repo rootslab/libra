@@ -7,7 +7,7 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _**Libra**_, a module to handle bindings between commands and __Redis__ replies. It uses an __automatic rollback mechanism__ to handle incomplete transactions.
+> _**Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions.
  
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 
