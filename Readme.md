@@ -1,4 +1,4 @@
-###Libra
+###♎ Libra
 [![build status](https://secure.travis-ci.org/rootslab/libra.png?branch=master)](http://travis-ci.org/rootslab/libra) 
 [![NPM version](https://badge.fury.io/js/libra.png)](http://badge.fury.io/js/libra)
 [![build status](https://david-dm.org/rootslab/libra.png)](https://david-dm.org/rootslab/libra)

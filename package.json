@@ -1,7 +1,7 @@
 {
   "name": "libra",
-  "version": "0.7.1",
-  "description": "Libra, a module to handle bindings between commands and Redis replies. Moreover, it uses an automatic rollback mechanism for subscriptions and transactions.",
+  "version": "0.7.2",
+  "description": "♎ Libra, a module to handle bindings between commands and Redis replies. Moreover, it uses an automatic rollback mechanism for subscriptions and transactions.",
   "homepage": "https://github.com/rootslab/libra",
   "private": false,
   "repository": {
@@ -9,9 +9,11 @@
     "url": "git://github.com/rootslab/libra.git"
   },
   "keywords": [
+    "♎",
     "libra",
     "redis",
-    "command",
+    "Redis",
+    "command queue",
     "queue"
   ],
   "author": {
@@ -23,7 +25,7 @@
     "bolgia" : ">=2.6.0"
   },
   "devDependencies": {
-    "syllabus" : ">=0.22.0"
+    "syllabus" : ">=0.22.2"
     },
   "main": "index",
   "engines": {
