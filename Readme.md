@@ -65,6 +65,7 @@ Libra.status : {
     , monitoring : {
         on : 0
     }
+    , auth : null
 }
 ```
 
@@ -74,10 +75,22 @@ Libra.status : {
 
 ```javascript
 /*
+ * Update the current auth status property. In this way the AUTH command
+ * has priority over the other commands in the queue; when #pop() will be
+ * called, it will return this command regardless if the command queue is
+ * not empty.
+ *
+ * It returns the current auth status property ( encoded AUTH command ).
+ *
+ * NOTE: only Syllabus AUTH command will be accepted and processed.
+ */
+Libra#auth( Object syllabus_auth_command ) : Object
+
+/*
  * Push a Syllabus command to the internal queue.
  * It returns the number of command objects currently in the queue.
  *
- * NOTE: Only Syllabus commands are accepted.
+ * NOTE: only Syllabus commands are accepted.
  */
 Libra#push( Object syllabus_command ) : Number
 
