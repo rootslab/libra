@@ -66,6 +66,7 @@ Libra.status : {
         on : 0
     }
     , auth : null
+    , select : null
 }
 ```
 
@@ -78,13 +79,34 @@ Libra.status : {
  * Update the current auth status property. In this way the AUTH command
  * has priority over the other commands in the queue; when #pop() will be
  * called, it will return this command regardless if the command queue is
- * not empty.
+ * empty or not.
  *
  * It returns the current auth status property ( encoded AUTH command ).
  *
- * NOTE: only Syllabus AUTH command will be accepted and processed.
+ * NOTE: only Syllabus AUTH command will be accepted and stored.
  */
 Libra#auth( Object syllabus_auth_command ) : Object
+
+``javascript
+/*
+ * Update the current select status property. In this way the SELECT command
+ * has priority over the other commands in the queue (after AUTH); when #pop()
+ * will be called, it will return this command regardless if the command queue
+ * is empty or not.
+ *
+ * It returns the current select status property ( encoded SELECT command ).
+ *
+ * NOTE: only Syllabus SELECT command will be accepted and stored.
+ */
+Libra#select( Object syllabus_select_command ) : Object
+
+/*
+ * Update internal subscription status ( using a un/subscription reply ),
+ * passing the command and the number of current subscribed channels.
+ *
+ * Examples: Libra#update( 'subscribe', 5 ) or Libra#update( 'unsubscribe', 3 )
+ */
+Libra#update( subscription_command, channels_number ) : Number
 
 /*
  * Push a Syllabus command to the internal queue.
@@ -99,14 +121,6 @@ Libra#push( Object syllabus_command ) : Number
  * It pops the current head of the command queue.
  */
 Libra#pop() : Object
-
-/*
- * Update internal subscription status ( using a un/subscription reply ),
- * passing the command and the number of current subscribed channels.
- *
- * Examples: Libra#update( 'subscribe', 5 ) or Libra#update( 'unsubscribe', 3 )
- */
-Libra#update( subscription_command, channels_number ) : Number
 
 /*
  * Start rolling up.
@@ -125,7 +139,6 @@ Libra#rollUp( [ Boolean on ] ) : Libra
  * NOTE: no rollBack will be done if rollUp was not already activated.
  */
 Libra#rollBack( [ Boolean on ] ) : Libra
-
 
 /*
  * Apply a fn to every element of the internal command queue;
