@@ -43,4 +43,4 @@ log( '- call Libra#pop, result should be SELECT command and not PING.' );
 assert.ok( l.pop() === scmd );
 
 log( '- now Libra.status.select should be resetted to null.' );
-assert.ok( l.status.auth === null );
+assert.ok( l.status.select === null );
