@@ -87,7 +87,6 @@ Libra.status : {
  */
 Libra#auth( Object syllabus_auth_command ) : Object
 
-```javascript
 /*
  * Update the current select status property. In this way the SELECT command
  * has priority over the other commands in the queue (after AUTH); when #pop()
