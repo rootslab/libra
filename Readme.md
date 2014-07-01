@@ -20,6 +20,14 @@ $ npm install libra [-g]
 // clone repo
 $ git clone git@github.com:rootslab/libra.git
 ```
+> __install and update devDependencies__:
+
+```bash
+ $ cd libra/
+ $ npm install --dev
+ # update
+ $ npm update --dev
+```
 > __require__
 
 ```javascript
@@ -33,6 +41,16 @@ var Libra = require( 'libra' );
 $ cd libra/
 $ npm test
 ```
+
+###Run Benchmark
+
+```bash
+$ cd librs/
+$ npm run-script bench
+```
+> __NOTE__: You should install _devDependencies_ (_Syllabus_) for running benchmarks.
+
+
 ###Constructor
 
 > Create an instance.
