@@ -7,7 +7,7 @@
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-> _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions.
+> _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 

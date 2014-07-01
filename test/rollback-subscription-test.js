@@ -55,7 +55,7 @@ assert.equal( l.cqueue.roll, true );
 log( '- now deep check queue, if rollback was successful.' );
 assert.deepEqual( l.cqueue.qhead, result );
 
-log( '- #pop all commands form queue.' );
+log( '- #pop all commands from queue.' );
 l.pop();
 l.pop();
 l.pop();
