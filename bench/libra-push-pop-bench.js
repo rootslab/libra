@@ -38,8 +38,6 @@ for ( ; i--; ) {
 
 etime =  Date.now() - stime;
 
-// l.flush();
-
 print( etime, k );
 
 log( '\n- check Libra internal queue size, should be:', k );
