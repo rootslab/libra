@@ -84,8 +84,8 @@ Libra.status : {
         on : 0
         , active : 0
     }
-    , auth : null
-    , select : null
+    , auth : 0
+    , select : 0
 }
 ```
 
