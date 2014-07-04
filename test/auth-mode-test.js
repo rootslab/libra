@@ -28,5 +28,5 @@ assert.ok( l.status.auth === acmd );
 log( '- call Libra#pop, result should be AUTH command and not PING.' );
 assert.ok( l.pop() === acmd );
 
-log( '- now Libra.status.auth should be resetted to null.' );
-assert.ok( l.status.auth === null );
+log( '- now Libra.status.auth should be resetted to 0.' );
+assert.ok( l.status.auth === 0 );

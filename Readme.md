@@ -82,6 +82,7 @@ Libra.status : {
     }
     , monitoring : {
         on : 0
+        , active : 0
     }
     , auth : null
     , select : null
@@ -127,7 +128,8 @@ Libra#update( subscription_command, channels_number ) : Number
 
 /*
  * Push a Syllabus command to the internal queue.
- * It returns the number of command objects currently in the queue.
+ * It returns the number of command objects currently in the queue, or -1
+ * if the command wasn't allowed/pushed.
  *
  * NOTE: only Syllabus commands are accepted.
  */

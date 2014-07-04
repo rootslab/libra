@@ -36,11 +36,11 @@ assert.ok( l.status.select === scmd );
 log( '- call Libra#pop, result should be AUTH command and not PING.' );
 assert.ok( l.pop() === acmd );
 
-log( '- now Libra.status.auth should be resetted to null.' );
-assert.ok( l.status.auth === null );
+log( '- now Libra.status.auth should be resetted to 0.', l.status.auth );
+assert.ok( l.status.auth === 0 );
 
 log( '- call Libra#pop, result should be SELECT command and not PING.' );
 assert.ok( l.pop() === scmd );
 
-log( '- now Libra.status.select should be resetted to null.' );
-assert.ok( l.status.select === null );
+log( '- now Libra.status.select should be resetted to 0.' );
+assert.ok( l.status.select === 0 );
