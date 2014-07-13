@@ -54,15 +54,3 @@ assert.equal( l.cqueue.roll, true );
 
 log( '- now deep check queue, if rollback was successful.' );
 assert.deepEqual( l.cqueue.qhead, result );
-
-log( '- #pop all commands from queue.' );
-l.pop();
-l.pop();
-l.pop();
-l.pop();
-
-log( '- now #push and #pop QUIT command, it should reset rollUp mechanism.' );
-l.push( quit );
-l.pop( quit );
-
-assert.equal( l.cqueue.roll, false );

@@ -28,19 +28,19 @@ log( '- call Libra#select with encoded SELECT command.' );
 l.select( scmd );
 
 log( '- check if status property was correctly updated.' );
-assert.ok( l.status.auth === acmd );
+assert.ok( l.status.auth[ 0 ] === acmd );
 
 log( '- check if status property was correctly updated.' );
-assert.ok( l.status.select === scmd );
+assert.ok( l.status.select[ 0 ] === scmd );
 
 log( '- call Libra#pop, result should be AUTH command and not PING.' );
 assert.ok( l.pop() === acmd );
 
-log( '- now Libra.status.auth should be resetted to 0.', l.status.auth );
-assert.ok( l.status.auth === 0 );
+log( '- now Libra.status.auth should be resetted to [].', l.status.auth );
+assert.deepEqual( l.status.auth, [] );
 
 log( '- call Libra#pop, result should be SELECT command and not PING.' );
 assert.ok( l.pop() === scmd );
 
-log( '- now Libra.status.select should be resetted to 0.' );
-assert.ok( l.status.select === 0 );
+log( '- now Libra.status.select should be resetted to [].' );
+assert.deepEqual( l.status.select, [] );

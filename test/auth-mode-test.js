@@ -23,10 +23,10 @@ log( '- call Libra#auth with encoded AUTH command.' );
 l.auth( acmd );
 
 log( '- check if status property was correctly updated.' );
-assert.ok( l.status.auth === acmd );
+assert.ok( l.status.auth[ 0 ] === acmd );
 
 log( '- call Libra#pop, result should be AUTH command and not PING.' );
 assert.ok( l.pop() === acmd );
 
 log( '- now Libra.status.auth should be resetted to 0.' );
-assert.ok( l.status.auth === 0 );
+assert.deepEqual( l.status.auth, [] );

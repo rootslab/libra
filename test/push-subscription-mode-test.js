@@ -50,7 +50,7 @@ log( '- check Libra#push(%s) in subscription mode, command should be accepted/ma
 l.push( punsub );
 assert.equal( l.cqueue.get( 3 ).isSubscription, true );
 
-log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'QUIT' );
+log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked and moved to status.quit property.', 'QUIT' );
 l.push( quit );
-assert.equal( l.cqueue.get( 4 ).cmd, 'QUIT' );
-assert.equal( l.cqueue.get( 4 ).isQuit, true );
+assert.equal( l.status.quit[ 0 ].cmd, 'QUIT' );
+assert.equal( l.status.quit[ 0 ].isQuit, true );
