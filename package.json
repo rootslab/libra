@@ -25,7 +25,7 @@
     "bolgia" : ">=2.6.1"
   },
   "devDependencies": {
-    "syllabus" : ">=0.29.2"
+    "syllabus" : ">=0.31.0"
     },
   "main": "index",
   "engines": {
