@@ -135,6 +135,11 @@ Libra#select( Object syllabus_select_command ) : Object
 Libra#update( subscription_command_reply [, channels_number ] ) : Number
 
 /*
+ * Get the total number of channels and patterns in status.subscriptions
+ */
+Libra#subs() : Libra
+
+/*
  * Push a Syllabus command to the internal queue.
  * It returns the number of command objects currently in the queue, or -1
  * if the command wasn't allowed/pushed.
