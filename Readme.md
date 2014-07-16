@@ -73,6 +73,7 @@ Libra.cqueue : Train
 Libra.status : {
     subscription : {
         on : 0
+        , active : 0
         , channels : 0
         , pchannels : 0
     }
@@ -153,6 +154,12 @@ Libra#push( Object syllabus_command ) : Number
  * It pops the current head of the command queue.
  */
 Libra#pop() : Object
+
+/*
+ * Get a element in the command queue without popping it.
+ * The default position is 0.
+ */
+Libra#head( [ Number pos ] ) : Object
 
 /*
  * Start rolling up.
