@@ -75,7 +75,6 @@ Libra.status : {
         on : 0
         , active : 0
         , channels : 0
-        , pchannels : 0
     }
     , transaction : {
         on : 0
@@ -136,7 +135,7 @@ Libra#select( Object syllabus_select_command ) : Object
 Libra#update( subscription_command_reply [, channels_number ] ) : Number
 
 /*
- * Get the total number of channels and patterns in status.subscriptions
+ * Get the total number of channels/patterns in status.subscriptions
  */
 Libra#subs() : Libra
 
