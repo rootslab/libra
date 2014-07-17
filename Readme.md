@@ -46,7 +46,7 @@ $ npm test
 
 ```bash
 $ cd libra/
-$ npm run-script bench
+$ npm run bench
 ```
 > __NOTE__: You should install _devDependencies_ (_Syllabus_) for running benchmarks.
 
