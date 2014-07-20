@@ -2,7 +2,7 @@
 [![build status](https://secure.travis-ci.org/rootslab/libra.png?branch=master)](http://travis-ci.org/rootslab/libra) 
 [![NPM version](https://badge.fury.io/js/libra.png)](http://badge.fury.io/js/libra)
 [![build status](https://david-dm.org/rootslab/libra.png)](https://david-dm.org/rootslab/libra)
-[![devDependency Status](https://david-dm.org/rootslab/spade/dev-status.png)](https://david-dm.org/rootslab/spade#info=devDependencies)
+[![devDependency Status](https://david-dm.org/rootslab/libra/dev-status.png)](https://david-dm.org/rootslab/libra#info=devDependencies)
 [![NPM](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
 
 [![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
