@@ -17,6 +17,7 @@ var log = console.log
     , unsub = commands.unsubscribe( 'channel' )
     , psub = commands.psubscribe( '*' )
     , punsub = commands.punsubscribe( '*' )
+    , ping = commands.ping()
     // callback that receives an Error
     , cback = function ( err, data ) {
         assert.ifError( ! err );
@@ -40,7 +41,7 @@ assert.equal( l.status.subscription.on, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'UNSUBSCRIBE' );
 l.push( unsub );
-assert.equal( l.cqueue.get( 1 ).isSubscription, true );
+assert.equal( l.cqueue.get( 1 ).isUnsubscription, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'PSUBSCRIBE' );
 l.push( psub );
@@ -48,9 +49,9 @@ assert.equal( l.cqueue.get( 2 ).isSubscription, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'PUNSUBSCRIBE' );
 l.push( punsub );
-assert.equal( l.cqueue.get( 3 ).isSubscription, true );
+assert.equal( l.cqueue.get( 3 ).isUnsubscription, true );
 
-log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked and moved to status.quit property.', 'QUIT' );
-l.push( quit );
-assert.equal( l.status.quit[ 0 ].cmd, 'QUIT' );
-assert.equal( l.status.quit[ 0 ].isQuit, true );
+log( '- check Libra#push a non QUIT command, in subscription mode, should return an error.' );
+assert.ok( l.push( quit ) );
+assert.ok( ! ~ l.push( ping ) );
+assert.ok( ping.err instanceof Error );

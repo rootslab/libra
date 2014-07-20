@@ -88,8 +88,6 @@ Libra.status : {
     , auth : []
     // it holds special SELECT command
     , select : []
-    // it holds a QUIT command, when the client is in pubsub mode
-    , quit : []
 }
 ```
 
@@ -125,12 +123,11 @@ Libra#select( Object syllabus_select_command ) : Object
 /*
  * Update internal subscription status ( using a un/subscription reply ), passing the command and
  * the number of current subscribed channels, received as message reply. It returns the total number
- * of subscribed channels and patterns or -1 to signal an 'OK' reply from QUIT.
+ * of subscribed channels and patterns.
  *
  * Examples: Libra#update( 'subscribe', 5 ) or Libra#update( 'unsubscribe', 3 )
  *
- * NOTE: QUIT is the only command accepted in pubsub mode, if reply is OK, status.quit command
- * will be executed.
+ * NOTE: Except for subscription commands, QUIT is the only command accepted in pubsub mode.
  */
 Libra#update( subscription_command_reply [, channels_number ] ) : Number
 
