@@ -41,7 +41,7 @@ assert.equal( l.status.subscription.on, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'UNSUBSCRIBE' );
 l.push( unsub );
-assert.equal( l.cqueue.get( 1 ).isUnsubscription, true );
+assert.equal( l.cqueue.get( 1 ).isSubscription, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'PSUBSCRIBE' );
 l.push( psub );
@@ -49,7 +49,7 @@ assert.equal( l.cqueue.get( 2 ).isSubscription, true );
 
 log( '- check Libra#push(%s) in subscription mode, command should be accepted/marked.', 'PUNSUBSCRIBE' );
 l.push( punsub );
-assert.equal( l.cqueue.get( 3 ).isUnsubscription, true );
+assert.equal( l.cqueue.get( 3 ).isSubscription, true );
 
 log( '- check Libra#push a non QUIT command, in subscription mode, should return an error.' );
 assert.ok( l.push( quit ) );
