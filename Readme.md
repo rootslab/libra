@@ -1,11 +1,20 @@
 ###♎ Libra
-[![build status](https://secure.travis-ci.org/rootslab/libra.png?branch=master)](http://travis-ci.org/rootslab/libra) 
-[![NPM version](https://badge.fury.io/js/libra.png)](http://badge.fury.io/js/libra)
-[![build status](https://david-dm.org/rootslab/libra.png)](https://david-dm.org/rootslab/libra)
-[![devDependency Status](https://david-dm.org/rootslab/libra/dev-status.png)](https://david-dm.org/rootslab/libra#info=devDependencies)
-[![NPM](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
 
-[![NPM](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/libra#mit-license)
+
+[![NPM VERSION](http://img.shields.io/npm/v/libra.svg)](https://www.npmjs.org/package/libra)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg)](http://travis-ci.org/rootslab/libra)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg)](https://david-dm.org/rootslab/libra)
+
+[![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
+
+[![GITHUB tag](http://img.shields.io/github/tag/rootslab/libra.svg)](https://github.com/rootslab/libra/tags)
+[![ISSUES](http://img.shields.io/github/issues/rootslab/libra.svg)](https://github.com/rootslab/libra/issues)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg)](http://npm-stat.com/charts.html?package=libra)
+
+[![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
+
 
 > _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
