@@ -5,6 +5,7 @@
 [![NPM VERSION](http://img.shields.io/npm/v/libra.svg)](https://www.npmjs.org/package/libra)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg)](http://travis-ci.org/rootslab/libra)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg)](https://david-dm.org/rootslab/libra)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/spade.svg)](https://david-dm.org/rootslab/spade#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
@@ -14,7 +15,6 @@
 [![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg)](http://npm-stat.com/charts.html?package=libra)
 
 [![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
-
 
 > _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
