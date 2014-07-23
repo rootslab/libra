@@ -18,6 +18,7 @@ var log = console.log
     , psub = commands.psubscribe( '*' )
     , punsub = commands.punsubscribe( '*' )
     , ping = commands.ping()
+    , time = commands.time()
     // callback that receives an Error
     , cback = function ( err, data ) {
         assert.ifError( ! err );
@@ -53,5 +54,5 @@ assert.equal( l.cqueue.get( 3 ).isSubscription, true );
 
 log( '- check Libra#push a non QUIT command, in subscription mode, should return an error.' );
 assert.ok( l.push( quit ) );
-assert.ok( ! ~ l.push( ping ) );
-assert.ok( ping.err instanceof Error );
+assert.ok( ! ~ l.push( time ) );
+assert.ok( time.err instanceof Error );
