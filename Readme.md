@@ -59,12 +59,25 @@ $ npm run bench
 
 ###Constructor
 
-> Create an instance.
+> Create an instance, argument within [ ] is optional.
 
 ```javascript
-var l = Libra()
+var l = Libra( [ opt ] )
 // or
-var l = new Libra()
+var l = new Libra( [ opt ] )
+```
+
+####Options
+
+> Default options are listed.
+
+```javascript
+opt = {
+    // rollback queue max size
+    rollback : 64 * 1024
+    // log last access time for queue head
+    , timestamps : false
+}
 ```
 
 ### Properties
@@ -81,6 +94,7 @@ Libra.status : {
         on : 0
         , active : 0
         , channels : 0
+        , patterns : 0
     }
     , transaction : {
         on : 0
@@ -94,6 +108,8 @@ Libra.status : {
     , auth : []
     // it holds special SELECT command
     , select : []
+    // timestamp for the last message received
+    , last_update : 0
 }
 ```
 
