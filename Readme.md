@@ -13,7 +13,7 @@
 
 [![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
 
-> _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions and transactions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
+> _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it uses an __automatic rollback mechanism__ for subscriptions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 
@@ -73,9 +73,9 @@ var l = new Libra( [ opt ] )
 
 ```javascript
 opt = {
-    // rollback queue max size
+    // rollback queue max size ( for Train ) 
     rollback : 64 * 1024
-    // log last access time for queue head
+    // log the last access time to the queue's head
     , timestamps : false
 }
 ```
