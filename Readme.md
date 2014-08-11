@@ -1,6 +1,6 @@
 ###♎ Libra
 
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/train.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
 [![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
 
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
