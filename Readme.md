@@ -1,13 +1,16 @@
 ###♎ Libra
 
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/libra#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg)](http://npm-stat.com/charts.html?package=libra)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/train.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
+[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
 
-[![NPM VERSION](http://img.shields.io/npm/v/libra.svg)](https://www.npmjs.org/package/libra)
-[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg)](http://travis-ci.org/rootslab/libra)
-[![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg)](https://david-dm.org/rootslab/libra)
-[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/libra.svg)](https://david-dm.org/rootslab/libra#info=devDependencies)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
+
+[![NPM VERSION](http://img.shields.io/npm/v/libra.svg?style=flat)](https://www.npmjs.org/package/libra)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg?style=flat)](http://travis-ci.org/rootslab/libra)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
