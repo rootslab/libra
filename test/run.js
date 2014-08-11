@@ -68,7 +68,6 @@
                 }
             }
         }
-        log( queue)
         // start
         next();
     } );
