@@ -7,3 +7,4 @@ var log = console.log
     , Libra = require( '../' )
     , l = Libra()
     ;
+log( util.inspect( l, false, 3, true ) );
