@@ -14,7 +14,7 @@
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
-[![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&stars=true)](https://nodei.co/npm/libra/)
+[![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
 
 > _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it implements an __automatic rollback mechanism__ for subscriptions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
@@ -257,3 +257,5 @@ Libra#reset() : Libra
 > CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[![GA](https://ga-beacon.appspot.com/UA-53998692-1/libra/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
