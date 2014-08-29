@@ -116,6 +116,10 @@ Libra.status : {
 }
 ```
 
+> __NOTE__: to avoid messy conditions Libra doesnt't allow:
+>  - to send subscription commands inside transactions ( a MULTI cmd was previuosly queued ).
+>  - to push commands in monitoring mode ( a MONITOR cmd was previuosly queued ), only QUIT command is allowed.
+
 ###Methods
 
 > Arguments within [ ] are optional.
