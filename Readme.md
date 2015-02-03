@@ -1,20 +1,23 @@
 ###♎ Libra
 
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
-[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
-
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
-
 [![NPM VERSION](http://img.shields.io/npm/v/libra.svg?style=flat)](https://www.npmjs.org/package/libra)
+[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/libra)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
+
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg?style=flat)](http://travis-ci.org/rootslab/libra)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra#info=devDependencies)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
 
 [![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
+
+[![status](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/libra)
+[![views](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/libra)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/libra)
 
 > _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it implements an __automatic rollback mechanism__ for subscriptions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
@@ -241,7 +244,7 @@ Libra#reset() : Libra
 
 ### MIT License
 
-> Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
