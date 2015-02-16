@@ -36,9 +36,9 @@ $ git clone git@github.com:rootslab/libra.git
 
 ```bash
  $ cd libra/
- $ npm install --dev
+ $ npm install 
  # update
- $ npm update --dev
+ $ npm update 
 ```
 > __require__
 
