@@ -1,44 +1,44 @@
 {
-  "name": "libra",
-  "version": "0.20.7",
-  "description": "♎ Libra, a module to handle bindings between commands and Redis replies. Moreover, it implements an automatic rollback mechanism for subscriptions.",
-  "homepage": "https://github.com/rootslab/libra",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/rootslab/libra.git"
-  },
-  "keywords": [
-    "♎",
-    "libra",
-    "spade",
-    "redis",
-    "Redis",
-    "command queue",
-    "queue"
-  ],
-  "author": {
-    "name": "Guglielmo Ferri",
-    "email": "44gatti@gmail.com"
-  },
-  "dependencies": {
-    "train" : ">=4.2.0",
-    "bolgia" : ">=2.7.4"
-  },
-  "devDependencies": {
-    "syllabus" : ">=0.35.7"
-    },
-  "main": "index",
-  "engines": {
+  "name": "libra"
+  , "version": "0.20.8"
+  , "description": "♎ Libra, a module to handle bindings between commands and Redis replies. Moreover, it implements an automatic rollback mechanism for subscriptions."
+  , "homepage": "https://github.com/rootslab/libra"
+  , "private": false
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/rootslab/libra.git"
+  }
+  , "keywords": [
+    "♎"
+    , "libra"
+    , "spade"
+    , "redis"
+    , "Redis"
+    , "command queue"
+    , "queue"
+  ]
+  , "author": {
+    "name": "Guglielmo Ferri"
+    , "email": "44gatti@gmail.com"
+  }
+  , "dependencies": {
+    "train" : ">=4.3.0"
+    , "bolgia" : ">=2.7.4"
+  }
+  , "devDependencies": {
+    "syllabus" : ">=0.36.1"
+  }
+  , "main": "index"
+  , "engines": {
     "node": ">=0.8.x"
-  },
-  "scripts": {
+  }
+  , "scripts": {
     "test": "node test/run.js"
     , "bench": "bash bench/run.sh"
-  },
-  "license": "MIT",
-  "readmeFilename": "Readme.md",
-  "bugs": {
+  }
+  , "license": "MIT"
+  , "readmeFilename": "Readme.md"
+  , "bugs": {
     "url": "https://github.com/rootslab/libra/issues"
   }
 }
