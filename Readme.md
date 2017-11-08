@@ -1,4 +1,4 @@
-###♎ Libra
+### ♎ Libra
 
 [![NPM VERSION](http://img.shields.io/npm/v/libra.svg?style=flat)](https://www.npmjs.org/package/libra)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/libra)
@@ -6,14 +6,14 @@
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
 
+[![NODE VERSION](https://img.shields.io/node/v/libra.svg)]()
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg?style=flat)](http://travis-ci.org/rootslab/libra)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra#info=devDependencies)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
 
-[![NPM GRAPH1](https://nodei.co/npm-dl/libra.png)](https://nodei.co/npm/libra/)
-
-[![NPM GRAPH2](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
+[![NPM MONTHLY](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
+[![NPM YEARLY](https://img.shields.io/npm/dy/libra.svg)]()
+[![NPM GRAPH]](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
 
 [![status](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/libra)
 [![views](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/libra)
@@ -25,7 +25,7 @@
 
 > __NOTE__: If you need a full-featured __Redis 2.x__ client, built with the help of __[Libra](#)__ and __[Syllabus](https://github.com/rootslab/syllabus)__ modules, try __[♠ Spade](https://github.com/rootslab/spade)__.
 
-###Install
+### Install
 
 ```bash
 $ npm install libra [-g]
@@ -47,14 +47,14 @@ var Libra = require( 'libra' );
 ```
 > See [examples](example/).
 
-###Run Tests
+### Run Tests
 
 ```bash
 $ cd libra/
 $ npm test
 ```
 
-###Run Benchmark
+### Run Benchmark
 
 ```bash
 $ cd libra/
@@ -63,7 +63,7 @@ $ npm run bench
 > __NOTE__: You should install _devDependencies_ (_Syllabus_) for running benchmarks.
 
 
-###Constructor
+### Constructor
 
 > Create an instance, argument within [ ] is optional.
 
@@ -73,7 +73,7 @@ var l = Libra( [ opt ] )
 var l = new Libra( [ opt ] )
 ```
 
-####Options
+### #Options
 
 > Default options are listed.
 
@@ -86,7 +86,7 @@ opt = {
 }
 ```
 
-### Properties
+###  Properties
 
 > __WARNING__: Don't mess with these properties.
 
@@ -123,7 +123,7 @@ Libra.status : {
 >  - to send subscription commands inside transactions ( a MULTI cmd was previuosly queued ).
 >  - to push commands in monitoring mode ( a MONITOR cmd was previuosly queued ), only QUIT command is allowed.
 
-###Methods
+### Methods
 
 > Arguments within [ ] are optional.
 
@@ -242,7 +242,7 @@ Libra#reset() : Libra
 ------------------------------------------------------------------------
 
 
-### MIT License
+###  MIT License
 
 > Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
