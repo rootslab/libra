@@ -6,14 +6,15 @@
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/libra.svg?style=flat)](https://codeclimate.com/github/rootslab/libra)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/libra#mit-license)
 
-[![NODE VERSION](https://img.shields.io/node/v/libra.svg)]()
+![NODE VERSION](https://img.shields.io/node/v/libra.svg)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/libra.svg?style=flat)](http://travis-ci.org/rootslab/libra)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/libra.svg?style=flat)](https://david-dm.org/rootslab/libra#info=devDependencies)
 
 [![NPM MONTHLY](http://img.shields.io/npm/dm/libra.svg?style=flat)](http://npm-stat.com/charts.html?package=libra)
-[![NPM YEARLY](https://img.shields.io/npm/dy/libra.svg)]()
-[![NPM GRAPH]](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
+![NPM YEARLY](https://img.shields.io/npm/dy/libra.svg)
+
+[![NPM GRAPH](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
 
 [![status](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/libra)
 [![views](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/libra)
