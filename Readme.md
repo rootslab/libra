@@ -16,10 +16,6 @@
 
 [![NPM GRAPH](https://nodei.co/npm/libra.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/libra/)
 
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/libra)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/libra)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/libra/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/libra)
-
 > _**♎ Libra**_, a module to handle bindings between commands and __Redis__ replies. Morover, it implements an __automatic rollback mechanism__ for subscriptions. It is heavily based on __[Train](https://github.com/rootslab/train)__ module, a __well-tested__ and fast __FIFO__ queue.
  
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
