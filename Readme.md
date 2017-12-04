@@ -69,7 +69,7 @@ var l = Libra( [ opt ] )
 var l = new Libra( [ opt ] )
 ```
 
-### #Options
+#### Options
 
 > Default options are listed.
 
@@ -260,5 +260,3 @@ Libra#reset() : Libra
 > CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 > TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[![GA](https://ga-beacon.appspot.com/UA-53998692-1/libra/Readme?pixel)](https://github.com/igrigorik/ga-beacon)
