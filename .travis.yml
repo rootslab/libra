@@ -1,23 +1,24 @@
 sudo: false
 language: node_js
+services:
+ - redis-server
 node_js:
-    - "9"
-    - "8"
-    - "7"
-    - "6"
-    - "5"
-    - "4"
-    - "3"
-    - "2"
-    - "1"
-    - "0.12"
-    - "0.11"
-    - "0.10"
+  - "9"
+  - "8"
+  - "7"
+  - "6"
+  - "5"
+  - "4"
+  - "2"
+  - "1"
+  - "0.12"
+  - "0.11"
+  - "0.10"
 before_script: 
  - npm install -g istanbul
  - npm install -g codeclimate-test-reporter
 script: istanbul cover -v test/run.js 
 after_script:
- - codeclimate < coverage/lcov.info
+ - codeclimate-test-reporter < coverage/lcov.info
 env: 
  - CODECLIMATE_REPO_TOKEN=55657fa8579e00aa583d8c77fc5fd84565cb72889ec1cd78789e58f923e8d71c   

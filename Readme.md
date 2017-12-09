@@ -237,7 +237,6 @@ Libra#reset() : Libra
 ```
 ------------------------------------------------------------------------
 
-
 ###  MIT License
 
 > Copyright (c) 2015-present &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
