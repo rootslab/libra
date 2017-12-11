@@ -19,8 +19,6 @@
  
 > __NOTE__: It accepts only commands generated/encoded by __[Syllabus](https://github.com/rootslab/syllabus)__.
 
-> __NOTE__: If you need a full-featured __Redis 2.x__ client, built with the help of __[Libra](#)__ and __[Syllabus](https://github.com/rootslab/syllabus)__ modules, try __[♠ Spade](https://github.com/rootslab/spade)__.
-
 ### Install
 
 ```bash
