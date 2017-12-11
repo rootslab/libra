@@ -22,11 +22,11 @@
     , "email": "44gatti@gmail.com"
   }
   , "dependencies": {
-    "train" : ">=4.4.0"
-    , "bolgia" : ">=2.8.1"
+    "train" : ">=4.4.1"
+    , "bolgia" : ">=2.8.2"
   }
   , "devDependencies": {
-    "syllabus" : ">=0.36.1"
+    "syllabus" : ">=1.0.0"
   }
   , "main": "index"
   , "engines": {
